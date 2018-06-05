@@ -1,0 +1,18 @@
+Sean and Kevin Closest pairs
+
+How our gridded approach works.
+In out gridded approach we used a two dimensional array of vectors to store
+pairs of points. We the two dimensional array is the grid and to decide how to populate
+the grid is as follows.
+
+First we calculate the max of the random x varibles and the max of the y variables.
+Seconds we create an xIndex  and Yindex or where we are going to put the variable by
+taking the value stored at the first element of the array and divide it by the (maxX
+or maxY variable / the dimension of the grid). The dimension of the grid is the square root
+of the number of points. We chose this value because of the pigenhole principle.
+
+To calculate closestPair
+the grided approach then checks to see if the xindex and yindex is empty. if not it checks for pairs inside
+the grid cell. if there are no pairs then it checks the cell to the right, below and diagnal.
+
+After it has checked those it checks special cases where the cell is on the border or the rightmost element.
